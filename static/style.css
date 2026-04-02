@@ -1,0 +1,166 @@
+/* ===== Background (Luxury Car) ===== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url("https://images.unsplash.com/photo-1552519507-da3b142c6e3d")
+        no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+}
+
+/* ===== Home Page ===== */
+.home-container {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.home-container h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+/* ===== Cards ===== */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.card {
+    padding: 40px;
+    width: 200px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+
+    transition: 0.4s;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(0, 123, 255, 0.7);
+}
+
+/* ===== Forms ===== */
+.form-box {
+    width: 350px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 25px;
+    border-radius: 20px;
+
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+
+    text-align: center;
+}
+
+/* Inputs */
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    padding: 10px 25px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* ===== Tables ===== */
+.container {
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 20px;
+
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: rgba(0,123,255,0.8);
+    color: white;
+}
+
+td, th {
+    padding: 12px;
+    text-align: center;
+}
+
+/* Row Hover */
+tr:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* Actions */
+.edit {
+    color: #00ffcc;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.delete {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+
+/* Back link */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    /* Footer Text */
+.footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+
+    color: #ffffff;
+
+    font-family: 'Poppins', sans-serif;
+
+    text-shadow: 
+        0 0 5px #00c6ff,
+        0 0 10px #007BFF,
+        0 0 15px #007BFF;
+}
+}

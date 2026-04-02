@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Update & Delete Customers</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Mobile</th>
+            <th>Amount</th>
+            <th>Location</th>
+            <th>Action</th>
+        </tr>
+
+        {% for row in customers %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>
+                <a href="/edit/{{ row[1] }}" class="edit">Edit</a>
+                <a href="/delete/{{ row[1] }}" class="delete">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="/">⬅ Back</a>
+</div>
+
+</body>
+</html>

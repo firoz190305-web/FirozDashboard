@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Customer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Edit Customer</h2>
+
+    <form action="/update" method="POST">
+        <input type="text" name="name" value="{{ customer[0] }}" required>
+        <input type="text" name="mobile" value="{{ customer[1] }}" required>
+        <input type="number" name="amount" value="{{ customer[2] }}" required>
+        <input type="text" name="location" value="{{ customer[3] }}" required>
+
+        <button type="submit">Update</button>
+    </form>
+
+    <a href="/">Back</a>
+</div>
+
+</body>
+</html>
